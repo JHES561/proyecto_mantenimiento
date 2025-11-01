@@ -1,40 +1,64 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f7f7f7;
+    background: linear-gradient(135deg, #4E4C67, #A6B1E1);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
 .form-container {
-    background: #fff;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #DCD6F7; /* Lila claro */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    width: 350px;
+}
+
+h2 {
+    text-align: center;
+    color: #4E4C67; /* Azul grisáceo oscuro */
+    margin-bottom: 20px;
 }
 
 label, select, input, button {
     display: block;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+}
+
+label {
+    font-weight: bold;
+    color: #985F6F; /* Borgoña apagado */
 }
 
 input, select {
-    padding: 8px;
-    border: 1px solid #ccc;
+    padding: 10px;
+    border: 1px solid #B4869F; /* Rosa malva */
     border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+    background-color: #ffffff;
+}
+
+input:focus, select:focus {
+    border-color: #A6B1E1; /* Azul lavanda */
 }
 
 button {
-    background-color: #3498db;
+    background-color: #985F6F; /* Borgoña apagado */
     color: white;
     border: none;
     padding: 10px;
     border-radius: 6px;
     cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #4E4C67; /* Azul grisáceo oscuro */
+    transform: translateY(-2px);
 }
