@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title itemprop="name">EcoShop - Eco-Friendly Products</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="app.js" defer></script>
+</head>
+
+<body>
+  <header itemscope itemtype="https://schema.org/Organization">
+    <meta itemprop="name" content="EcoShop" />
+    <meta itemprop="url" content="https://www.ecoshop.com" />
+    <meta itemprop="logo" content="https://www.ecoshop.com/logo.png" />
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#products" data-route="products">Products</a></li>
+        <li><a href="#about" data-route="about">About Us</a></li>
+        <li><a href="#contact" data-route="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="app" role="main">
+
+    <section id="products" class="view active" itemscope itemtype="https://schema.org/ItemList">
+      <h2 itemprop="name">Featured Products</h2>
+      <div class="product-list" id="productList">
+        <!-- Productos cargados dinámicamente -->
+        <article class="product" itemscope itemtype="https://schema.org/Product">
+          <h3 itemprop="name">Reusable Water Bottle</h3>
+          <img src="images/bottle.jpg" alt="Reusable Bottle" itemprop="image">
+          <p itemprop="description">Made from recycled materials, BPA-free, and sustainable.</p>
+          <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="USD" />
+            <span itemprop="price">$12.99</span>
+          </span>
+        </article>
+      </div>
+    </section>
+
+    <!-- sostenibilidad -->
+    <section id="about" class="view" itemscope itemtype="https://schema.org/AboutPage">
+      <h2>Our Sustainability Goals</h2>
+      <p>At <span itemprop="name">EcoShop</span>, we are committed to reducing environmental impact through responsible sourcing and packaging.</p>
+    </section>
+
+    <!--  contacto -->
+    <section id="contact" class="view" itemscope itemtype="https://schema.org/ContactPage">
+      <h2>Contact Us</h2>
+      <p>You can reach us at: <a href="mailto:info@ecoshop.com" itemprop="email">info@ecoshop.com</a></p>
+      <p>Follow us on social media for sustainability tips!</p>
+    </section>
+
+  </main>
+
+  <!-- PIE  -->
+  <footer itemscope itemtype="https://schema.org/WPFooter">
+    <p>© <span itemprop="copyrightYear">2025</span> <span itemprop="copyrightHolder">EcoShop</span>. All rights reserved.</p>
+  </footer>
+</body>
+</html>
