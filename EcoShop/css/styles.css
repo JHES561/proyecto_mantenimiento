@@ -1,13 +1,22 @@
+/* Paleta inspirada en la imagen */
+:root {
+  --color1: #e8e9e5; /* gris claro */
+  --color2: #d3c9be; /* beige grisáceo */
+  --color3: #ede4d7; /* crema claro */
+  --color4: #d8c6b8; /* beige medio */
+  --color5: #c8afa2; /* marrón suave */
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f8f9f8;
+  background: var(--color3);
   color: #333;
 }
 
 header, footer {
-  background: #2e7d32;
-  color: #fff;
+  background: var(--color5);
+  color: white;
   padding: 1rem;
   text-align: center;
 }
@@ -32,6 +41,8 @@ nav a:hover {
 
 main {
   padding: 2rem;
+  background: var(--color1);
+  color: var(--color4);
 }
 
 .view {
